@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="dns-prefetch" href="css/" />
+    <link rel="dns-prefetch" href="js/" />
+    <link rel="dns-prefetch" href="imgs/" />
+
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="js/wp-includes/css/block-library/style.min.css"
+      media="all"
+    />
+    <style id="wp-block-library-inline-css">
+      .has-text-align-justify {
+        text-align: justify;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="mediaelement-css"
+      href="js/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wp-mediaelement-css"
+      href="js/wp-includes/js/mediaelement/wp-mediaelement.min.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="classic-theme-styles-css"
+      href="js/wp-includes/css/classic-themes.min.css"
+      media="all"
+    />
+    <style id="global-styles-inline-css">
+      body {
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--duotone--dark-grayscale: url("#wp-duotone-dark-grayscale");
+        --wp--preset--duotone--grayscale: url("#wp-duotone-grayscale");
+        --wp--preset--duotone--purple-yellow: url("#wp-duotone-purple-yellow");
+        --wp--preset--duotone--blue-red: url("#wp-duotone-blue-red");
+        --wp--preset--duotone--midnight: url("#wp-duotone-midnight");
+        --wp--preset--duotone--magenta-yellow: url("#wp-duotone-magenta-yellow");
+        --wp--preset--duotone--purple-green: url("#wp-duotone-purple-green");
+        --wp--preset--duotone--blue-orange: url("#wp-duotone-blue-orange");
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+      }
+
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+
+      body .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+
+      body .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+
+      body .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      body .is-layout-constrained > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+
+      body .is-layout-constrained > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+
+      body .is-layout-constrained > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      body
+        .is-layout-constrained
+        > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      body .is-layout-constrained > .alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+
+      body .is-layout-flex {
+        display: flex;
+      }
+
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      body .is-layout-flex > * {
+        margin: 0;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="google-fonts-css"
+      href="css/googleapis.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="flickity-styles-css"
+      href="js/unpkg/flickity@2/dist/flickity.min.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      id="_themename-icon-styles-css"
+      href="js/wp-content/themes/fonts/chronusq-icon/chronusq-icon.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="_themename-styles-css"
+      href="js/wp-content/themes/css/styles.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="jetpack_css-css"
+      href="js/jetpack/css/jetpack.css"
+      media="all"
+    />
+    <script
+      src="js/wp-includes/js/jquery/jquery.min.js"
+      id="jquery-core-js"
+    ></script>
+    <script
+      src="js/wp-includes/js/jquery/jquery-migrate.min.js"
+      id="jquery-migrate-js"
+    ></script>
+    <style>
+      img#wpstats {
+        display: none;
+      }
+    </style>
+    <style type="text/css">
+      /* If html does not have either class, do not show lazy loaded images. */
+
+      html:not(.jetpack-lazy-images-js-enabled):not(.js) .jetpack-lazy-image {
+        display: none;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add("jetpack-lazy-images-js-enabled");
+    </script>
+    <link rel="icon" href="icons/cropped-favicon.png" sizes="32x32" />
+    <link rel="icon" href="icons/cropped-favicon-2.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="icons/cropped-favicon-3.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="icons/cropped-favicon-4.png"
+    />
+  </head>
+
+  <body
+    class="home page-template page-template-page-templates page-template-front-page page-template-page-templatesfront-page-php page page-id-87 usd"
+  >
+    <div class="drawer-wrapper">
+      <div class="drawer-header">
+        <a class="drawer-logo" href="http://127.0.0.1:5500/gailab/">
+          <img src="icons/cropped-favicon-large.png" alt="Gai Research Group" />
+        </a>
+        <div class="drawer-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="drawer-menu">
+        <ul class="menu site-nav usd">
+          <li>
+            <a href="http://127.0.0.1:5500/gailab/" class="logo is-active">
+              <img
+                src="icons/cropped-favicon-trans.png"
+                alt="Gai Research Group"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/gailab/research/"
+              ><i class="fal fa-3x fa-atom"></i> <span>Research</span></a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/gailab/people/"
+              ><i class="fal fa-3x fa-users"></i> <span>Members</span></a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/gailab/publications/"
+              ><i class="fal fa-3x fa-file-alt"></i>
+              <span>Publications</span></a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/gailab/about/" target="_blank"
+              ><i class="icon-chronusq"></i> <span>Join Us</span></a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/gailab/news/"
+              ><i class="fal fa-3x fa-newspaper"></i> <span>News</span></a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/gailab/photos/"
+              ><i class="fal fa-3x fa-camera"></i> <span>Gallery</span></a
+            >
+          </li>
+          <!-- <li>
+  <a  href="https://www.chem.pku.edu.cn/gailab/teaching/"><i class="fal fa-3x fa-chalkboard-teacher"></i> <span>Teaching</span></a>
+</li> -->
+          <!-- <li>
+  <a  href="https://www.chem.pku.edu.cn/gailab/wiki/"><i class="fal fa-3x fa-flask-potion"></i> <span>Wiki</span></a>
+</li> -->
+        </ul>
+      </nav>
+      <div class="drawer-content">
+        <div class="banner usd"></div>
+
+        <div class="highlight highlight-to-edge">
+          <div class="highlight-title">Research</div>
+          <div class="highlight-content">
+            <div class="slider" data-flickity='{ "wrapAround": true }'>
+              <div class="slide">
+                <div
+                  class="image-overlay"
+                  style="
+                    background-image: radial-gradient(
+                        ellipse closest-side,
+                        rgba(15, 14, 22, 0.5),
+                        #011625
+                      ),
+                      url('icons/cropped-favicon-trans.png');
+                  "
+                ></div>
+                <div class="slide-content">
+                  <h2 class="slide-header">Feng Gai Research Group</h2>
+                  <p>
+                    GaiLab is located in the College of Chemistry and Molecular
+                    Engineering, Peking University. We are a group of physical
+                    chemists, biochemists and biologists that study a broad
+                    range of biophysical topics, with a special interest in
+                    protein folding dynamics. Using and developing an assortment
+                    of laser spectroscopic techniques, we aim to provide
+                    detailed mechanistic insight into how proteins adopt their
+                    native conformations and interact, from the fastest folding
+                    secondary structures to membrane binding and insertion and
+                    aggregate formation. Visit the Research page for more
+                    information on the research being done in the GaiLab.
+                  </p>
+                </div>
+              </div>
+              <div class="slide">
+                <div
+                  class="image-overlay"
+                  style="
+                    background-image: radial-gradient(
+                        ellipse closest-side,
+                        rgba(15, 14, 22, 0.5),
+                        #011625
+                      ),
+                      url('imgs/research-interests.png');
+                  "
+                ></div>
+                <div class="slide-content">
+                  <h2 class="slide-header">Research Interests</h2>
+                  <p>
+                    We are interested in developing and applying novel s
+                    pectroscopic reporters, methods, and techniques to study the
+                    structure-dynamics-function (or reactivity) relationship of
+                    various chemical and biological systems, such as peptides
+                    and proteins, with a focus on assessing the kinetic and
+                    mechanistic details of the chemical/biological processes
+                    and/or reactions in question. Our current research efforts
+                    include, but are not limited to, (1) development of
+                    unnatural amino acid-based, environmentally-sensitive
+                    vibrational probes for site-specific interrogation of
+                    protein structure, hydration, electrostatics, dynamics, and
+                    function，(2) development of unnatural amino acid-based
+                    fluorescence reporters for biological spectroscopy and
+                    microscopy，(3)development of unnatural amino acid-based
+                    fluorescence resonance energy transfer (FRET) or
+                    photoinduced electron transfer (PET) pairs for
+                    characterization of protein conformations, conformational
+                    change, and conformational dynamics, (4) development of
+                    biological materials, such as fibrils, that have tailored
+                    spectroscopic or optical properties, (5) assessment of the
+                    kinetics and mechanism of protein folding under in vitro and
+                    in vivo conditions, (6) site-specific interrogation of the
+                    molecular interactions between protein sidechains and
+                    naturally-occurring osmolytes as well as ions. (7)
+                    manipulation of biological electron and proton transfer
+                    processes via site-selective tuning of the underlying
+                    driving force, (8) development of multidimensional
+                    spectroscopic and imaging techniques for chemical,
+                    biological, and physical applications...
+                  </p>
+                  <div class="read-more">
+                    <a
+                      href="http://127.0.0.1:5500/gailab/research/#research-interests"
+                      >Read More &raquo;</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div
+                  class="image-overlay"
+                  style="
+                    background-image: radial-gradient(
+                        ellipse closest-side,
+                        rgba(15, 14, 22, 0.5),
+                        #011625
+                      ),
+                      url('imgs/2D-IR.png');
+                  "
+                ></div>
+                <div class="slide-content">
+                  <h2 class="slide-header">
+                    Two-Dimensional Infrared Spectroscopy
+                  </h2>
+                  <p>
+                    To gain higher spectral resolution, ultrafast dynamical
+                    information, and coupling mechanisms between individual
+                    transitions, we employ two-dimensional infrared spectroscopy
+                    (2D IR). 2D IR is based on a three-pulse excitation scheme
+                    using femtosecond IR laser excitation where the signal field
+                    S(τ,T,t) is measured with fixed waiting time T but varying τ
+                    and t. Fourier transforms along τ and t give a 2D IR
+                    spectrum. The detailed shapes of the diagonal and
+                    cross-peaks in the spectrum can then be used to study many
+                    different phenomena such as mode coupling, internal energy
+                    reorganization, and other relaxation properties of the
+                    distributions of states.
+                  </p>
+                  <div class="read-more">
+                    <a
+                      href="http://127.0.0.1:5500/gailab/research/#two-dimensional-infrared-spectroscopy"
+                      >Read More &raquo;</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div
+                  class="image-overlay"
+                  style="
+                    background-image: radial-gradient(
+                        ellipse closest-side,
+                        rgba(15, 14, 22, 0.5),
+                        #011625
+                      ),
+                      url('imgs/tjump.png');
+                  "
+                ></div>
+                <div class="slide-content">
+                  <h2 class="slide-header">
+                    Temperature-Jump and Transient Infrared Spectroscopy
+                  </h2>
+                  <p>
+                    We are interested in observing some of the fastest events in
+                    folding. To this end, we apply laser induced temperture-jump
+                    and photochemical triggering to rapidly initiate
+                    folding/unfolding reactions, which we can monitor by probing
+                    various infrared absorption reporters that can measure
+                    either global or local dynamics. Combining a range of
+                    different such observables allows us to build mechanistic
+                    pictures of the folding "pathways" of some of the fastest
+                    folding proteins.
+                  </p>
+                  <div class="read-more">
+                    <a
+                      href="http://127.0.0.1:5500/gailab/research/#temperature-Jump-and-transient-infrared-spectroscopy"
+                      >Read More &raquo;</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div
+                  class="image-overlay"
+                  style="
+                    background-image: radial-gradient(
+                        ellipse closest-side,
+                        rgba(15, 14, 22, 0.5),
+                        #011625
+                      ),
+                      url('imgs/fret.png');
+                  "
+                ></div>
+                <div class="slide-content">
+                  <h2 class="slide-header">
+                    Fluorescence Correlation Spectroscopy and Single-Molecule
+                    FRET
+                  </h2>
+                  <p>
+                    How do peptides interact with membranes? What are the size
+                    distributions and time scales associated with aggregate
+                    formation? Can we understand the structure and dynamics of
+                    intrinsicly dissordered peptides? These are all burning
+                    questions with the potential to answer pressing needs in the
+                    application of anti-microbials and amyloid-related diseases.
+                    Single molecule methods go a long way towards probing the
+                    micro-heterogeneity and dynamics associated with these
+                    processes.
+                  </p>
+                  <div class="read-more">
+                    <a
+                      href="http://127.0.0.1:5500/gailab/research/#single-molecule-fret"
+                      >Read More &raquo;</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div
+                  class="image-overlay"
+                  style="
+                    background-image: radial-gradient(
+                        ellipse closest-side,
+                        rgba(15, 14, 22, 0.5),
+                        #011625
+                      ),
+                      url('imgs/probes.jpg');
+                  "
+                ></div>
+                <div class="slide-content">
+                  <h2 class="slide-header">
+                    Non-Natural Amino Acid IR and FRET Probes
+                  </h2>
+                  <p>
+                    Design and application of new, small, IR and UV chromophores
+                    allows us to probe systems with minimal perturbation and
+                    high structural resolution.
+                  </p>
+                  <div class="read-more">
+                    <a href="http://127.0.0.1:5500/gailab/research/#probes"
+                      >Read More &raquo;</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div
+                  class="image-overlay"
+                  style="
+                    background-image: radial-gradient(
+                        ellipse closest-side,
+                        rgba(15, 14, 22, 0.5),
+                        #011625
+                      ),
+                      url('imgs/nanosecond-IR.jpg');
+                  "
+                ></div>
+                <div class="slide-content">
+                  <h2 class="slide-header">Nanosecond transient IR</h2>
+                  <p>
+                    As shown (Schematic diagram of the nanosecond transient IR
+                    setup), the transient IR absorption apparatus consists of a
+                    nanosecond pump source and a continuous wave (CW) quantum
+                    cascade (QC) IR laser (Daylight Solutions, CA) to serve as
+                    the probe source. For the laser-induced temperature-jump
+                    (T-jump) experiments, the wavelength of the pump pulse (∼3
+                    ns) was tuned to ∼1.9 μm via Raman shifting the fundamental
+                    output of a Nd:YAG laser (Infinity, Coherent Radiation, CA)
+                    using H2. For the other transient IR measurements discussed,
+                    the third harmonic of the Minilite II Nd:YAG laser
+                    (Continuum Electrooptic, Inc., CA) was used as the pump
+                    pulse. The pump-induced change in the probe signal was
+                    measured by a 50 MHz liquid nitrogen cooled HgCdTe (MCT)
+                    detector (Kolmar Technologies, MA), and signal digitization
+                    was accomplished by a digital oscilloscope (Tektronix, OR).
+                  </p>
+                  <div class="read-more">
+                    <a
+                      href="http://127.0.0.1:5500/gailab/research/#nanosecond-transient-IR"
+                      >Read More &raquo;</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div
+                  class="image-overlay"
+                  style="
+                    background-image: radial-gradient(
+                        ellipse closest-side,
+                        rgba(15, 14, 22, 0.5),
+                        #011625
+                      ),
+                      url('imgs/fcs.jpg');
+                  "
+                ></div>
+                <div class="slide-content">
+                  <h2 class="slide-header">FCS</h2>
+                  <p>
+                    As shown (Schematic diagram of the FCS setup), the
+                    excitation light was derived from either an argon ion laser
+                    (Spectra-Physics, CA) or a helium–neon laser (JDS Uniphase
+                    Corporation, CA), depending on the fluorophore used. Light
+                    focusing was achieved by a confocal microscope (Nikon
+                    Eclipse TE 300) equipped with an oil immersion objective
+                    (100× or 60×), and the confocal volume was defined by a 50
+                    μm pinhole. A Hanbury-Brown and Twiss setup, which involves
+                    a 50/50 nonpolarizing beamsplitter (Newport, CA) and two
+                    avalanche photodiodes (APDs) (PerkinElmer, NJ), was used to
+                    increase the time resolution. Cross-correlation was
+                    accomplished by a Flex 03-LQ-01 autocorrelation card
+                    (Correlator.com, NJ).
+                  </p>
+                  <div class="read-more">
+                    <a href="http://127.0.0.1:5500/gailab/research/#fcs-setup"
+                      >Read More &raquo;</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="highlight highlight-to-edge">
+          <div class="highlight-title">News</div>
+          <div class="highlight-content">
+            <div class="mini-card-container">
+              <div class="mini-card-grid">
+                <article class="mini-card mini-article">
+                  <header class="mini-article-header">
+                    <h5 class="mini-article-title">
+                      <a
+                        href="http://127.0.0.1:5500/gailab/applications-for-2022-bms-junior-fellow/"
+                        >BMS Junior Fellow call for applications 2022</a
+                      >
+                    </h5>
+                    <time class="mini-article-date">Jan 26, 2022</time>
+                  </header>
+                </article>
+                <article class="mini-card mini-article">
+                  <header class="mini-article-header">
+                    <h5 class="mini-article-title">
+                      <a href="http://127.0.0.1:5500/gailab/come-and-join-us/"
+                        >Come and Join Us</a
+                      >
+                    </h5>
+                    <time class="mini-article-date">Jan 2, 2022</time>
+                  </header>
+                </article>
+                <article class="mini-card mini-article">
+                  <header class="mini-article-header">
+                    <h5 class="mini-article-title">
+                      <a
+                        href="http://127.0.0.1:5500/gailab/welcome-new-students-2021/"
+                        >Welcome three new graduate students (2021), Yuyao Yang,
+                        Yu Yuan and Manqian Wang</a
+                      >
+                    </h5>
+                    <time class="mini-article-date">Dec 02, 2021</time>
+                  </header>
+                </article>
+                <article class="mini-card mini-article">
+                  <header class="mini-article-header">
+                    <h5 class="mini-article-title">
+                      <a
+                        href="http://127.0.0.1:5500/gailab/biological-lab-online/"
+                        >Congratulations on our accessible biological and
+                        chemical laboratory</a
+                      >
+                    </h5>
+                    <time class="mini-article-date">Dec 02, 2021</time>
+                  </header>
+                </article>
+                <article class="mini-card mini-article">
+                  <header class="mini-article-header">
+                    <h5 class="mini-article-title">
+                      <a href="http://127.0.0.1:5500/gailab/cleanrooms-online/"
+                        >Congratulations on our accessible cleanrooms for
+                        ultrafast optical experiments
+                      </a>
+                    </h5>
+                    <time class="mini-article-date">Dec 02, 2021</time>
+                  </header>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="highlight highlight-to-edge">
+          <div class="highlight-title">Presentations</div>
+          <div class="highlight-content">
+            <div class="presentations">
+              <div class="no-presentations">
+                There are no upcoming presentations at this time
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="footer-item footer-menu">
+              <ul>
+                <li><a href="http://127.0.0.1:5500/gailab/">Home</a></li>
+                <li>
+                  <a href="http://127.0.0.1:5500/gailab/research/">Research</a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5500/gailab/people/">Members</a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5500/gailab/publications/"
+                    >Publications</a
+                  >
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5500/gailab/about" target="_blank"
+                    >Join Us</a
+                  >
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5500/gailab/news/">News</a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5500/gailab/photos/">Gallery</a>
+                </li>
+                <!-- <li><a href="https://www.chem.pku.edu.cn/gailab/teaching/">Teaching</a></li> -->
+                <!-- <li><a href="https://www.chem.pku.edu.cn/gailab/wiki/">Wiki</a></li> -->
+              </ul>
+            </div>
+            <address class="footer-item footer-contact">
+              <img src="icons/gailab.png" alt="Gai Research Group" /><br />
+              Gai Research Group<br />
+              Box 100871<br />
+              College of Chemistry and Molecular Engineering<br />
+              Peking University<br />
+              No. 292 Chengfu Road, Haidian District<br />
+              Beijing, China 010-6275-2665
+            </address>
+          </div>
+          <div class="colophon">
+            &copy; 2023
+            <a href="https://www.chem.pku.edu.cn/gailab/" target="_blank"
+              >The Gai Group - All rights reserved</a
+            >
+            /
+            <a href="https://www.chem.pku.edu.cn/" target="_blank">CCME</a>
+            /
+            <a href="https://www.pku.edu.cn/" target="_blank">PKU</a>
+          </div>
+        </footer>
+      </div>
+      <!-- .drawer-content -->
+      <div class="drawer-overlay"></div>
+    </div>
+    <!-- .drawer-wrapper -->
+    <script
+      src="js/jetpack/_inc/build/photon/photon.min.js"
+      id="jetpack-photon-js"
+    ></script>
+    <script src="/js/kit-font-awesome.js" id="fontawesome-scripts-js"></script>
+    <script
+      src="js/unpkg/flickity@2/dist/flickity.pkgd.min.js"
+      id="flickity-scripts-js"
+    ></script>
+    <script
+      src="js/wp-content/themes/js/app.js"
+      id="_themename-scripts-js"
+    ></script>
+    <script
+      src="js/wp-content/plugins/intersection-observer.js"
+      id="jetpack-lazy-images-polyfill-intersectionobserver-js"
+    ></script>
+    <script id="jetpack-lazy-images-js-extra">
+      var jetpackLazyImagesL10n = {
+        loading_warning:
+          "Images are still loading. Please cancel your print and try again.",
+      };
+    </script>
+    <script
+      src="js/wp-content/plugins/lazy-images.js"
+      id="jetpack-lazy-images-js"
+    ></script>
+    <script src="js/stats-wp.js" defer></script>
+    <script>
+      _stq = window._stq || [];
+      _stq.push([
+        "view",
+        {
+          v: "ext",
+          blog: "48797648",
+          post: "87",
+          tz: "-8",
+          srv: "uwligroup.org",
+          j: "1:11.8.4",
+        },
+      ]);
+      _stq.push(["clickTrackerInit", "48797648", "87"]);
+    </script>
+    <script>
+      window.addEventListener("click", function (elem) {
+        var _elem$target, _elem$target$dataset, _window, _window$_trfq;
+        return (
+          (elem === null || elem === void 0
+            ? void 0
+            : (_elem$target = elem.target) === null || _elem$target === void 0
+            ? void 0
+            : (_elem$target$dataset = _elem$target.dataset) === null ||
+              _elem$target$dataset === void 0
+            ? void 0
+            : _elem$target$dataset.eid) &&
+          ((_window = window) === null || _window === void 0
+            ? void 0
+            : (_window$_trfq = _window._trfq) === null ||
+              _window$_trfq === void 0
+            ? void 0
+            : _window$_trfq.push([
+                "cmdLogEvent",
+                "click",
+                elem.target.dataset.eid,
+              ]))
+        );
+      });
+    </script>
+    <script src="js/tcc_l.combined.1.0.6.min.js"></script>
+    <script
+      src="js/tccl-tti.min.js"
+      onload="window.tti.calculateTTI()"
+    ></script>
+  </body>
+</html>
