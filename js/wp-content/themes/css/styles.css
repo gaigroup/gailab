@@ -553,7 +553,7 @@ img.is-usd {
 
 .banner {
     background-color: whitesmoke;
-    background-image: url(http://127.0.0.1:5500/gailab/cover.png);
+    background-image: url(https://gaigroup.github.io/gailab/cover.png);
     background-position:center;
     background-size: cover;
     height: 0;
@@ -563,7 +563,7 @@ img.is-usd {
 @media only screen and (min-width:768px) {
     .banner {
         background-color: whitesmoke;
-        background-image: url(http://127.0.0.1:5500/gailab/cover-2.png);
+        background-image: url(https://gaigroup.github.io/gailab/cover-2.png);
         height: calc(100vh - 88px);
         padding-top: 0
     }
